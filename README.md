@@ -1,5 +1,4 @@
-## Data cleaning and preprocessing
-
+## Data cleaning and preprocessing <img src="https://github.com/paul2596/breast_cancer_classifier_nov_2022/assets/71576923/836e4a63-e459-4edc-9e64-6cb63947d88d" width="25" height="25">
 We firstly clean the data and make the necessary changes needed to proceed with further calculations. 
 For this we perform the following actions:
 * Remove the column with id which would not be useful in our calculations
@@ -11,7 +10,7 @@ benign
 * Form training set and test sets for further usage
 
 
-## Exploratory Data Analysis
+## Exploratory Data Analysis <img src="https://github.com/paul2596/breast_cancer_classifier_nov_2022/assets/71576923/0925ce60-3e61-4726-9bd0-6653955ba416" width="30" height="30">
 
 To get an overview of the data in hand we will first perform exploratory analysis on the data in hand.
 ![image](https://github.com/paul2596/breast_cancer_classifier/assets/71576923/d1cdf713-b762-4d89-a6b9-c6f1cdc719ad)
@@ -23,8 +22,8 @@ Further the correlation plot shows the relation between the variables, most of t
 other variables.
 
 
-Building Classifiers Using:
-1) Best subset selection method
+## Building Classifiers Using:
+### 1) Best subset selection method
 The goal here is to identify the best model by taking out the explanatory variables that can predict the
 response more accurately. We use regsubsets to carry out this in R and use exhaustive method to consider
 all subsets
@@ -35,7 +34,7 @@ predictor variable ‘Mitoses’ and choose the model with Cl.thickness, Cell.si
 Epith.c.size, Bare.nuclei, Bl.cromatin, Normal.nucleoli. This is the best subset model as it suits all the three
 criteria’s and is indifferent.
 
-2) Logistic regression using Lasso penalty
+### 2) Logistic regression using Lasso penalty
 We use LASSO to shrink the coefficient values we do this by assigning a penalty to the loss function which is
 lambda. Since the same shrinkage is carried out on all the variables, scaled data has to be used for LASSO.
 ![image](https://github.com/paul2596/breast_cancer_classifier/assets/71576923/188269fc-eb89-4404-a32c-da0c4b0c1a97)
@@ -51,7 +50,7 @@ of the coefficients drop to 0 and the first explanatory variable to drop out is 
 by the subset selection method we had seen earlier.
 
 
-3) Discriminant Analysis method Linear Disciminant Analysis (LDA)
+### 3) Discriminant Analysis method Linear Disciminant Analysis (LDA)
 We use LDA to find the region in which our explanatory variable falls in depending on the value it holds
 ![image](https://github.com/paul2596/breast_cancer_classifier/assets/71576923/ea823f9b-6a1f-4fac-a71d-efdfb63ba9ce)
 
