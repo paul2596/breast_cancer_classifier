@@ -2,13 +2,13 @@
 
 We firstly clean the data and make the necessary changes needed to proceed with further calculations. 
 For this we perform the following actions:
-• Remove the column with id which would not be useful in our calculations
-• Drop rows with NA values
-• Change the response variable values to a binary value with 1 indicating malignant and 0 indicating
+* Remove the column with id which would not be useful in our calculations
+* Drop rows with NA values
+* Change the response variable values to a binary value with 1 indicating malignant and 0 indicating
 benign
-• Convert the value of the variables from a factor to a quantitative variable
-• Scale the matrix containing all the predictor variables
-• Form training set and test sets for further usage
+* Convert the value of the variables from a factor to a quantitative variable
+* Scale the matrix containing all the predictor variables
+* Form training set and test sets for further usage
 
 
 ## Exploratory Data Analysis
